@@ -1,0 +1,17 @@
+ws:
+  # ssl:
+  #   key: /usr/local/www/usock/private/key.pem
+  #   cert: /usr/local/www/usock/private/cert.pem
+  host: 127.0.0.1
+  port: 3012
+  max_connections: 10000
+auth:
+  private_key: usockPrivateKey
+  keep_alive: 300
+mongo:
+  uri: mongodb://localhost:27017
+  db: usock_messages
+  table: messages
+rd:
+  uri: 'redis://:password@localhost:6379/1'
+  ns: usock_worker
